@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int power(int a, int b);
-
+int add (int a, int b);
+int sub (int a, int b);
 void main()
 {
 	int x,y;
@@ -10,9 +11,18 @@ void main()
 	 
 	int (*pf)(int,int);
 	pf =power;
-	printf("result = %d\n",pf(x,y));
+	printf("power result = %d\n",pf(x,y));
+	
+	pf=add;
+	printf("add result = %d\n", pf(x,y));
+
+	pf= sub;
+	printf("sub result = %d\n", pf(x,y));
 }
 
+int sub(int a,int b){
+	return a-b;
+}
 
 int power(int a, int b){
 	
@@ -23,4 +33,8 @@ int power(int a, int b){
 	}
 		
 	return result;
+}
+
+int add(int a, int b){
+	return a+b;
 }
