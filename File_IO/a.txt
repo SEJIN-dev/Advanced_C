@@ -1,0 +1,2 @@
+Hello this is SEJIN. 
+this file is just test file for file copy.c
