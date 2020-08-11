@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "power.h"
 
-int power(int x, int y)
+int power(int x, int y, int *return_value)
 {
 	int i;
 	int result=1;
@@ -9,6 +9,7 @@ int power(int x, int y)
 	for(i =0; i<y; i++){
 	result *= x;
 	}
-	
+	*return_value = result; 
 	return result;
+
 }
