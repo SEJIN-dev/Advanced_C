@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	
 
 	printf("%d to the power of %d is %d\n", x,y,power(x,y,&return_value));
-	printf("call by reference is :%d", return_value);
+	printf("call by reference is :%d\n", return_value);
 	
 	return 0;
 }
